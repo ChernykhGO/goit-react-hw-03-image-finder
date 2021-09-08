@@ -29,7 +29,6 @@ export default class App extends Component {
                 }));
                 console.log(this.state.images);
                 console.log(this.state.page);
-                // console.log(4);
             })
             .catch(error => this.setState(error));
     };
