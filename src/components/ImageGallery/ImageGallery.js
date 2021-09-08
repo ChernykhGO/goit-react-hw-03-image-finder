@@ -13,7 +13,7 @@ export default function ImageGallery({ inputText }) {
         <ul className={s.imageGallery}>
             {inputText.map(({ id, webformatURL, tags }) => (
                 <ImageGalleryItem
-                    id={id}
+                    key={id}
                     webformatURL={webformatURL}
                     tags={tags}
                 />

@@ -13,24 +13,13 @@
 // Кнопка должна рендерится только тогда, когда есть какие-то загруженные
 // изобаржения. Если массив изображений пуст, кнопка не рендерится.
 
-// import { Component } from 'react';
-// import s from './Button.module.css';
-// import ImagesInfo from '../ImagesInfo/ImagesInfo';
+import React from 'react';
+import s from './Button.module.css';
 
-// export default class Button extends Component {
-//
-//     // this.setState({
-//     //     page: 1
-//     //   });
-//     loadMore = () => {
-//         console.log();
-//     };
-
-//     render() {
-//         return (
-//             <button class={s.Button} onClick={() => loadMore()}>
-//                 Load more
-//             </button>
-//         );
-//     }
-// }
+export default function Button({ handleLoadMore }) {
+    return (
+        <button className={s.Button} onClick={handleLoadMore}>
+            Load more
+        </button>
+    );
+}
